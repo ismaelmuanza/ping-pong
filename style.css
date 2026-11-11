@@ -113,3 +113,28 @@ button:hover {
         padding: 10px 14px;
     }
 }
+
+/* dificuldade */
+
+.difficulty {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.difficulty label {
+    color: #d1d5db;
+    font-size: 14px;
+}
+
+.difficulty select {
+    padding: 9px 15px;
+    border-radius: 7px;
+    border: 1px solid #475569;
+    background: #26364c;
+    color: white;
+    cursor: pointer;
+}

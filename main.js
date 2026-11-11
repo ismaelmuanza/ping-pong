@@ -11,6 +11,11 @@ const startBtn = document.getElementById("start-btn");
 const pauseBtn = document.getElementById("pause-btn");
 const resetBtn = document.getElementById("reset-btn");
 
+// dificuldade do jogo
+
+const difficultySelect = document.getElementById("difficulty");
+let computerSpeed = 3.5;
+
 // Dimensões do campo
 const WIDTH = 800;
 const HEIGHT = 500;
@@ -129,7 +134,7 @@ function update() {
 
     // Inteligência do computador
     const target = ball.y - paddleHeight / 2;
-    const computerSpeed = 5.1;
+    computerSpeed = Number(difficultySelect.value);
 
     if (computerY < target) {
         computerY += computerSpeed;
