@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong - Jogador vs Computador</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <main class="game-container">
+
+        <h1>Ping Pong</h1>
+        <p class="subtitle">Jogador vs Computador</p>
+
+        <section class="scoreboard">
+            <div>
+                <h3>Jogador</h3>
+                <span id="player-score">0</span>
+            </div>
+
+            <div>
+                <h3>Computador</h3>
+                <span id="computer-score">0</span>
+            </div>
+        </section>
+
+        <canvas id="game" width="800" height="500"></canvas>
+
+        <p id="message">Primeiro a chegar aos 5 pontos vence!</p>
+
+        <div class="buttons">
+            <button id="start-btn">Iniciar jogo</button>
+            <button id="pause-btn">Pausar</button>
+            <button id="reset-btn">Reiniciar</button>
+        </div>
+
+        <div class="instructions">
+            <p><strong>Controlos:</strong></p>
+            <p>↑ / ↓ ou W / S para movimentar a raquete.</p>
+            <p>Também podes utilizar o rato.</p>
+        </div>
+
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
